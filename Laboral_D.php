@@ -100,7 +100,7 @@ for($i=1;$i<293;$i++){
 }
 
 echo '<pre>';
-echo 'La asignagura LMS tiene '.count($r['LMS']).' Horas lectivos<br/>';
+echo 'La asignagura LMS tiene '.(count($r['LMS'])*2).' Horas lectivos<br/>';
 echo 'La asignagura HW tiene '.count($r['HW']).' Horas lectivos<br/>';
 
 echo '</pre>';
@@ -131,11 +131,11 @@ function tabla($r,$contenido){
 		echo '</tr>';
 	}
 }
-
+/*
 tabla($r,'LMS');
 tabla($r,'HW');
 tabla($r,'dias');
-
+*/
 ?>
 
 </table>
