@@ -89,48 +89,50 @@ for($i=1;$i<293;$i++){
 		if(	// LMS: lunes y miércoles (2h)
 			date('D',strtotime($d))=='Mon' or
 			date('D',strtotime($d))=='Wed'
-			) $r['LMS'][]=date('Y-m-d',strtotime('2019-09-11')+($i-1)*24*60*60);
+			) $r['LMS'][]=['fecha'=>date('Y-m-d',strtotime('2019-09-11')+($i-1)*24*60*60)];
 		if(	// HE: Llunes, martes y miercoles
 			date('D',strtotime($d))=='Mon' or
 			date('D',strtotime($d))=='Tue' or
 			date('D',strtotime($d))=='Wed' 
-			) $r['HW'][]=date('Y-m-d',strtotime('2019-09-11')+($i-1)*24*60*60);
+			) $r['HW'][]=['fecha'=>date('Y-m-d',strtotime('2019-09-11')+($i-1)*24*60*60)];
 	}
 }
 
 echo '<pre>';
-echo count($r['LMS']);
+echo 'La asignagura LMS tiene '.count($r['LMS']).' días lectivos<br/>';
+echo 'La asignagura HW tiene '.count($r['HW']).' días lectivos<br/>';
 
-print_r($r['LMS']);
-echo '</pre>';
-
-echo '<pre>';
-echo count($r['HW']);
-print_r($r['HW']);
 echo '</pre>';
 
 
-foreach($r['dias'] as $f){
-	echo '<tr>';
-	// día año
-	echo '<td>';
-	echo $f['n'];
-	echo '</td>';	
-	// día semana
-	echo '<td>';
-	echo $f['s'];
-	echo '</td>';
-	// fecha
-	echo '<td>';
-	echo $f['fecha'];
-	echo '</td>';	
-	// día de la semana
-	echo '<td>';
-	echo $f['D'];
-	echo '</td>';	
-	
-	echo '</tr>';
+function tabla($r,$contenido){
+	echo '<tr style="background-color:aquamarine;"><td>'.$contenido.'</td></tr>';
+	foreach($r[$contenido] as $f){
+		echo '<tr>';
+		// fecha
+		echo '<td>';
+		echo $f['fecha'];
+		echo '</td>';	
+		if($contenido=='dias'){
+			// día año
+			echo '<td>';
+			echo $f['n'];
+			echo '</td>';	
+			// día semana
+			echo '<td>';
+			echo $f['s'];
+			echo '</td>';
+			// día de la semana
+			echo '<td>';
+			echo $f['D'];
+			echo '</td>';	
+		}
+		echo '</tr>';
+	}
 }
+tabla($r,'LMS');
+tabla($r,'HW');
+tabla($r,'dias');
 ?>
 
 </table>
