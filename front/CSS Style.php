@@ -1,10 +1,29 @@
 <html>
 <head>
 	<title>Trabajo HTML</title>
+	<style>
+	body{
+		background-color:pink;
+		
+	}
+	h1{
+		color:blue;
+	}
+		
+	h2{
+		color:red
+		
+	}
+	h3{
+		color:yellow
+	}
+	
+	</style>
 </head>
-<body bgcolor="grey">
+<body>
+	
 <center>
-<table width="80%" bgcolor="ffffff" ><tr><td>
+<table><tr><td>
 <h1>Practica de html</h1>
 	<h2><u>Prueba 1</u></h2>
 		<h3><strong>Prueba 2</strong></h3>
@@ -30,7 +49,7 @@
 	<tr><td>Pais Vasco</td><td>Alava</td></tr>
 	
 </table>
-<font size="6" color="aquamarine">Hola Buenas Tardes</font>
+<font>Hola Buenas Tardes</font>
 	
 </body>
 </td></tr></table>
