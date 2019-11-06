@@ -1,42 +1,25 @@
 <html>
 <head>
 	<title>Trabajo HTML</title>
-	<style>
-	body{
-		background-color:pink;
-		
-	}
-	h1{
-		color:blue;
-	}
-		
-	h2{
-		color:red
-		
-	}
-	h3{
-		color:yellow
-	}
-	
-	</style>
+	 <link rel="stylesheet" type="text/css" href="CSS.css"> 
 </head>
 <body>
 	
 <center>
 <table><tr><td>
 <h1>Practica de html</h1>
-	<h2><u>Prueba 1</u></h2>
-		<h3><strong>Prueba 2</strong></h3>
+	<h2>Prueba 1</h2>
+		<h3>Prueba 2</h3>
 			<h4>Prueba 3</h4>
 
-<img src="Gumball.gif" width="120" height="100"/>
-<img src="10.gif" width="120" height="100"/>
+<img src="Gumball.gif" class="fotos"/>
+<img src="10.gif" />
 <form>
 	<input/>
 	<input type="submit" value="Enviar">
 </form>
 <h3>Autonomias Bañadas por el cantabrico</h3>
-<table border=1>
+<table class="provincias">
 	<tr><td>Autonomias</td><td>Provincia</td></tr>
 	<tr><td>Galicia</td><td>A Coruña</td></tr>
 	<tr><td>Galicia</td><td>Lugo</td></tr>
@@ -49,8 +32,7 @@
 	<tr><td>Pais Vasco</td><td>Alava</td></tr>
 	
 </table>
-<font>Hola Buenas Tardes</font>
-	
+<h5>Hola Buenas Tardes</h5>	
 </body>
 </td></tr></table>
 </center>
