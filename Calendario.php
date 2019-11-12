@@ -78,8 +78,9 @@ $r=$r.$a[$n-1]['Dias']."<br>";
 $r=$r.$a[$n-1]['Estación']."<br>";
 return $r;
 }
-echo meses(12)."<br>";
-echo meses(6)."<br>";
+echo meses(12)."¿Octubre?"."<br>";
+echo meses(6)."Junio"."<br>";
+echo meses(1)."¿Enero?"."<br>";
 
 
 
