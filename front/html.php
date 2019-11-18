@@ -6,7 +6,7 @@
 <center>
 <table width="80%" bgcolor="ffffff" ><tr><td>
 <h1>Practica de html</h1>
-	<h><u>Autonomias del Norte</u></h2>
+	<h><u>Autonomias del Norte</u></h>
 		<h1><b>Galicia</b></h1>
 			<h2>Pontevedra<h2>
 			<h2>Ourense<h2>
@@ -14,7 +14,7 @@
 			<h2>Lugo<h2>
 		<h1>Asturias<h2>
 			<h2>Asturias<h2>
-		<h1><B>Cantabria<B></h1>
+		<h1><B>Cantabria<B><h1>
 			<h2>Cantabria<h2>
 		<h1>Pais Vasco<h1>
 			<h2>Guipuzcoa<h2>
