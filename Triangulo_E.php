@@ -1,21 +1,21 @@
 <?php
 function longitud ($d,$e,$f) {
-	$r="triangulo escaleno";
+	$r="Escaleno";
 	if ($d==$e || $e==$f)
-		$r="triangulo isosceles";
+		$r="Isosceles";
 	if ($e==$f and $d==$f)
 		$r="Triangulo equilatero";
 	return $r;
 }
 function Angulo ($a,$b,$c) {
-		$r="Triangulo Acutangulo";
+		$r= "Acutangulo";
 			if ($a==90 or $b==90 or $c==90)
-				$r="Triangulo Rectangulo";
+				$r="Rectangulo";
 			if ($a>90 or $b>90 or $c>90)
-				$r="Triangulo Obtusangulo";
+				$r="Obtusangulo";
 			return $r;
 }
-function triangulos($l){
+function triangulo($l){
 	list($a,$b,$c)=$l;
 	$x=($a**2-$b**2+$c**2)/(2*$c);
 	$h=sqrt($a**2-$x**2);
@@ -31,7 +31,7 @@ function triangulos($l){
 	
 	return $r;
 }
-$r=triangulos([1,1,sqrt(2)]);
+$r=triangulo([1,1,sqrt(2)]);
 	echo '<pre>';
 	print_r($r);
 	echo '</pre>';
