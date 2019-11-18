@@ -11,7 +11,7 @@ function longitud ($a,$b,$c) {
 echo longitud(1,1,1)."¿Equilatero?"."<br>";
 echo longitud(2,2,1)."¿Isosceles?"."<br>";
 echo longitud(3,2,1)."¿Escaleno?"."<br>";
-echo longitud(1,2,1)."¿Escaleno?"."<br>";
+echo longitud(1,2,1)."¿Isosceles?"."<br>";
 echo longitud(1,2,3)."¿Escaleno?"."<br>";
 echo longitud(1,1,2)."¿Isosceles?"."<br>";
-echo longitud(2,2,1)."¿Escaleno?"."<br>";
+echo longitud(2,2,1)."¿Isosceles?"."<br>";
