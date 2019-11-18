@@ -6,15 +6,31 @@
 <center>
 <table width="80%" bgcolor="ffffff" ><tr><td>
 <h1>Practica de html</h1>
-	<h2><u>Prueba 1</u></h2>
-		<h3><strong>Prueba 2</strong></h3>
-			<h4>Prueba 3</h4>
-
-<img src="Gumball.gif" width="120" height="100"/>
-<img src="10.gif" width="120" height="100"/>
+	<h><u>Autonomias del Norte</u></h2>
+		<h1><b>Galicia</b></h1>
+			<h2>Pontevedra<h2>
+			<h2>Ourense<h2>
+			<h2>A Coruña<h2>
+			<h2>Lugo<h2>
+		<h1>Asturias<h2>
+			<h2>Asturias<h2>
+		<h1><B>Cantabria<B></h1>
+			<h2>Cantabria<h2>
+		<h1>Pais Vasco<h1>
+			<h2>Guipuzcoa<h2>
+			<h2>Alava<h2>
+			<h2>Vizcaya<h2>
+		<h1>Navarra<h1>
+			<h2>Navarra<h2>
+			
+		
+		
+<p>Hola Profe aqui tienes tu parrafo<p>
+<img src="Gumball.gif" width="120" height="100"/><br/>
+<img src="10.gif" width="120" height="100"/><br/>
 <form>
-	<input/>
 	<input type="submit" value="Enviar">
+		</input>
 </form>
 <h3>Autonomias Bañadas por el cantabrico</h3>
 <table border=1>

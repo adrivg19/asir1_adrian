@@ -32,6 +32,4 @@ function triangulo($l){
 	return $r;
 }
 $r=triangulo([1,1,sqrt(2)]);
-	echo '<pre>';
-	print_r($r);
-	echo '</pre>';
+	
