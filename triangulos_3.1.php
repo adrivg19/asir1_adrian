@@ -6,7 +6,7 @@ function angulo ($a,$b,$c) {
 			if ($a>90 or $b>90 or $c>90)
 				$r='Obtusangulo';
 			
-		return $r;
+return $r; }
 function longitud ($a,$b,$c) {
 		$r='Escaleno';
 			if ($a==$b || $b==$c or $a==$c) 
@@ -14,7 +14,7 @@ function longitud ($a,$b,$c) {
 			if ($b==$c and $a==$c)
 				$r='Equilatero';
 			
-		return $r;
+return $r; }
 function tipo($a,$b,$c,$d,$e,$f) {
 		return longitud($a,$b,$c).' y ' .angulo($d,$e,$f)
 }
