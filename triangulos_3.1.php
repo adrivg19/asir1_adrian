@@ -16,10 +16,13 @@ function longitud ($a,$b,$c) {
 			
 return $r; }
 function tipo($a,$b,$c,$d,$e,$f) {
-		return longitud($a,$b,$c).' y ' .angulo($d,$e,$f)
-}
+		return longitud($a,$b,$c).' y ' .angulo($d,$e,$f)};
 		
-echo tipo(45,45,90,45,45,90);
+echo tipo(1,1,sqrt(2),45,45,90).' - rectangulo e isosceles';
+echo tipo(1,sqrt(2),1,45,90,45).' - rectangulo e isosceles';
+echo tipo(sqrt(2),1,1,90,45,45).' rectangulo e isosceles';
+
 echo '<br>';
-echo tipo(1,1,1,60,60,60);."<br>";
+echo tipo(1,1,1,60,60,60).' - rectangulo e acutangulo'."<br>";
+echo tipo(4,2,3,95,40,45).' - rectangulo e obtusangulo'."<br>";
 
