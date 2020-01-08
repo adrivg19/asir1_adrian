@@ -1,10 +1,25 @@
-<p>Adrian</p>
-<a href="http://192.168.0.99/asir1_mario/asir1_1.php">Mario Alonso</a>
-<a href="http://192.168.0.90/asir1_pablo/asir1.php">Pablo Moreta</a>
-<?php
-$file = fopen("visitas.txt", "a");
-fwrite($file, date('Y-m-d H:i '));
-$f=fopen('visitas.txt','a');
-fwrite($f,$_SERVER['REMOTE_ADDR']."\r\n");
-fclose($f);
-?>
+<?php // Vamos a realizar las consultas del entrenador en php
+$conn = new mysqli('localhost','root','','provincias');
+$conn->query("SET NAMES utf8;");
+$provincias=$conn->query("
+	SELECT * FROM provincias;
+")->fetch_all(MYSQLI_ASSOC);
+if(0){
+	echo '<pre>';
+	print_r($provincias);
+	echo '</pre>';
+}
+if(1){ // provincias de Galicia
+	foreach($provincias as $p){
+		if($p['autonomia']=='Galicia'){
+			echo $p['provincia'];
+			echo '<br/>';
+		}
+	}
+
+if(2) { // Provincias que empiezen por A
+
+	foreach($provincias as $p) {
+		if($p['provincia'][0]=='A') echo $p['provincia'];
+	}
+if(3) { // Pr
